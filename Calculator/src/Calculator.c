@@ -36,3 +36,4 @@ int main(void) {
     }
          printf(" Answer=%f", c);
 }
+/*  Прием связи */
