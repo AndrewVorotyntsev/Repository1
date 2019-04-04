@@ -41,7 +41,7 @@ int main(void) {
                     printf(" Answer=%f", a-b);  //Выполняется вычитание двух чисел
                     break ;
                 case 2:
-                    printf(" Answer=%f", a*b);  //Выполняется усножение двух чисел
+                    printf(" Answer=%f", a*b);  //Выполняется умножение двух чисел
                     break;
                 case 3:
                     printf(" Answer=%f", a/b);  //Выполняется деление первого числа на второе
