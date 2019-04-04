@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Calculator.c
- Author      :
+ Author      : AndrewVorotyntsev
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -17,9 +17,9 @@
 int main(void) {
     setvbuf(stdout, NULL, _IONBF, 0);
     setvbuf(stderr, NULL, _IONBF, 0);
-    float factorial(float n)
+    float factorial(float n) #Задаем функцию факториал
     {
-        if (n == 0 || n == 1) return 1;
+        if (n == 0 || n == 1) return 1; 
         return n * factorial(n - 1);
     }
     int c ;
