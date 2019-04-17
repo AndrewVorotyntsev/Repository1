@@ -22,6 +22,7 @@ float factorial(float n)
     return n * factorial(n - 1);
 }
 
+
 int algebra()
 {
     float a , b ;
@@ -111,7 +112,4 @@ int main(void)
     }while(v==1);
     if(v==0)
     printf("Program is closed\n");
-
-
-
 }
