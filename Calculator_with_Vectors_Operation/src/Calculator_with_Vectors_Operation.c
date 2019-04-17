@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : Calc_with_vectors.c
- Author      : =^_^=
+ Author      : Andrew Vorotyntsev
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
@@ -16,22 +16,22 @@
 
 
 
-float factorial(float n)
+float factorial(float n) //Задаем функцию факториал
 {
     if (n == 0 || n == 1) return 1;
     return n * factorial(n - 1);
 }
 
 
-int algebra()
+int algebra() //Задаем операции с вещественными числами
 {
     float a , b ;
     int i ;
-    printf("Write fist number");
+    printf("Write fist number"); //Вводим числа
     scanf ("%f",&a) ;
     printf("Write second number");
     scanf ("%f",&b) ;
-    printf("Choose operation \n 0-plus 1-minus 2-times 3-Divided by 4-power 5- factorial");
+    printf("Choose operation \n 0-plus 1-minus 2-times 3-Divided by 4-power 5- factorial"); //Выбор операции
     scanf ("%i",&i) ;
     switch (i)
         {
@@ -57,7 +57,7 @@ int algebra()
 }
 
 
-int vectors()
+int vectors() // Задаем векторные операции
 {
     int  i ,n  ;
     printf("Write size of vectors");
@@ -66,12 +66,12 @@ int vectors()
     if (A != NULL) A = malloc(i*sizeof(float));
     if (B != NULL) B = malloc(i*sizeof(float));
     printf("Write first vector");
-    for (int k=0;k<i;k++)
+    for (int k=0;k<i;k++)          //Вводим вектора
         scanf("%f", &A[k]);
     printf("Write second vector");
     for (int l=0;l<i;l++)
         scanf("%f", &B[l]);
-    printf("Choose operation  0-plus 1-minus 2-scalar");
+    printf("Choose operation  0-plus 1-minus 2-scalar"); //Выбираем операцию для векторов
     scanf ("%i",&n) ;
     switch (n)
         {
@@ -101,13 +101,13 @@ int main(void)
     setvbuf(stdout, NULL, _IONBF, 0);
     setvbuf(stderr, NULL, _IONBF, 0);
     int z , v;
-    do {printf("Choose type: 0-numbers , 1-vectors");
+    do {printf("Choose type: 0-numbers , 1-vectors"); // Выбираем операцию
     scanf("%i", &z);
     if (z==0)
-        algebra();
+        algebra(); //Выполняется операция с вещественными числами
     else
-        vectors();
-    printf("Do you wish to restart program? (1-yes , 0-no)");
+        vectors(); //Выполняется операция с векторами
+    printf("Do you wish to restart program? (1-yes , 0-no)"); //Запрос на повтор 
     scanf ("%i",&v) ;
     }while(v==1);
     if(v==0)
