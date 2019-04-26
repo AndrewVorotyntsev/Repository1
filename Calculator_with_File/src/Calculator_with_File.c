@@ -42,19 +42,19 @@ int main(void)
                     fprintf(result," Answer=%f", a+b);
                     break;
                 case 1:
-                    printf(result," Answer=%f", a-b);
+                    fprintf(result," Answer=%f", a-b);
                     break ;
                 case 2:
-                    printf(result," Answer=%f", a*b);
+                    fprintf(result," Answer=%f", a*b);
                     break ;
                 case 3:
-                    printf(result," Answer=%f", a/b);
+                    fprintf(result," Answer=%f", a/b);
                    break;
                 case 4:
-                    printf(result," Answer=%f", pow (a, b));
+                    fprintf(result," Answer=%f", pow (a, b));
                     break;
                 case 5:
-                    printf(result," Answer=%f", factorial(a));
+                    fprintf(result," Answer=%f", factorial(a));
                     break;
         }
     }
