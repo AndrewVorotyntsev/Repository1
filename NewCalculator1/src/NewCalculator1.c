@@ -11,21 +11,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <conio.h>
-#include <string.h>
+
+float factorial(float n) //Задаем функцию факториал
+{
+    if (n == 0 || n == 1) return 1; 
+    return n * factorial(n - 1);
+}
 
 int main(void) {
     setvbuf(stdout, NULL, _IONBF, 0);
     setvbuf(stderr, NULL, _IONBF, 0);
-    float factorial(float n) //Задаем функцию факториал
-    {
-        if (n == 0 || n == 1) return 1; 
-        return n * factorial(n - 1);
-    }
     int c ;
     do {
         float a , b ; //задаем переменные
-        int i ;
+        int i ; //Выбираем операцию
         printf("Write fist number");
         scanf ("%f",&a) ; //Вводим переменные
         printf("Write second number");
